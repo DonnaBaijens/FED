@@ -57,6 +57,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Screenshot(s) van de tweede pagina (small screen):
   Evenementen/Updates
   <img src="readme-images/Volleybal2.PNG" width="375px" alt="Evenementen/Updates">
+
+
+  ### Uiteindelijke keuze website opdracht:
+  https://www.volleybal.nl/
+
+  #### Screenshot(s) van de eerste pagina (small screen): 
+  Homepagina Volleybal.nl
+  <img src="readme-images/Volleybalgoed.PNG" width="375px" alt="Homepagina Volleybal.nl">
+
+  #### Screenshot(s) van de tweede pagina (small screen):
+  Praktische informatie (met drie pagina's waar je naartoe kunt gaan: Veelgestelde vragen, Spelregels, Talentontwikkeling)
+  <img src="readme-images/Volleybalgoed2.PNG" width="375px" alt="Praktische informatie">
  
 </details>
 
