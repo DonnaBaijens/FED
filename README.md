@@ -246,13 +246,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  Hier zie je een uitwerking van mijn breakdownschets van header, main en footer en daarbij apart beschreven wat wat is.
+  <img src="readme-images/breakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  Hier zie je een uitwerking van de header, van het hamburgermenu. Hierbij staat ook apart beschreven wat wat is.
+  <img src="readme-images/headerbreakdown.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/headerbreakdown1.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  Hier zie je een uitwerking van de footer. In de footer zit een carrousel met sponsoren van volleybal.nl.
+  <img src="readme-images/footerbreakdown.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -268,15 +272,42 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Wat ik goed vond gaan, was dat ik de uitleg goed begreep in de les en dat we dit gelijk moesten toepassen in oefeningen. Verder vond ik 
+  het goed te volgen en hierdoor ging ik snel met mijn code aan de slag. Html en CSS gaan goed tot nu toe.
+
+  Wat ik lastig vond, is dat ik soms wel weer even moet nadenken hoe je ook alweer iets moet opschrijven in CSS qua code. En ook wat iets nou ook alweer betekent. 
+
+  Ik heb de header van de website zo goed nagemaakt als mogelijk. Hier ben ik heel blij mee, want ik heb ook voor de oranje lijn bovenaan een gradient gebruikt via CSS. Verder staat alle content (html) al in de code, dus dat moet ik alleen nog goed neerzetten met CSS. Alle plaatjes staan ook al onder elkaar. 
+
+  Er gaat natuurlijk nog veel meer CSS bijkomen deze weken, want dit is nog maar het begin en eigenlijk alleen de header.
+
+  In de html heeft de docent me geholpen om twee svg plaatjes erin te krijgen. Dit is uiteindelijk gelukt en deze heb ik naast elkaar gezet.
+
+  Ook heb ik het favicon veranderd naar het volleybal.nl favicon. Zo lijkt de website nu precies hetzelfde als je ze allebei open hebt staan in de browser.
+
+  <img src="readme-images/css1.PNG" width="375px" alt="eerste deel CSS code">
+  <img src="readme-images/css2.PNG" width="375px" alt="tweede deel CSS code">
+  <img src="readme-images/html1.PNG" width="375px" alt="eerste deel Html code met favicon bovenin">
+  <img src="readme-images/html2.PNG" width="375px" alt="tweede deel Html code">
+  <img src="readme-images/html3.PNG" width="375px" alt="derde deel Html code">
+  <img src="readme-images/html4.PNG" width="375px" alt="vierde deel Html code">
+  <img src="readme-images/faviconsite.PNG" width="375px" alt="browser open met favicon van volleybal.nl">
+  <img src="readme-images/headersite.PNG" width="375px" alt="voorlopige header van mijn site">
+  <img src="readme-images/headersite.PNG" width="375px" alt="voorlopige header van mijn site">
+  <img src="readme-images/plaatjessite.PNG" width="375px" alt="eerste plaatjes van mijn site">
+  <img src="readme-images/contentslecht.PNG" width="375px" alt="Html van mijn site wat nog goed moet worden vormgegeven met CSS">
+
+
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1 Donna Baijens     | student 2          | student 3    | student 4        |
+  | ---                         | ---                | ---          | ---              |
+  | dit bespreken               | en dit             | en ik dit    | en dan ik dat    |
+  | en dat ook nog              | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | ...                         | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
