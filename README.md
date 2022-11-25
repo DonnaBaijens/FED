@@ -285,6 +285,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Ook heb ik het favicon veranderd naar het volleybal.nl favicon. Zo lijkt de website nu precies hetzelfde als je ze allebei open hebt staan in de browser.
 
+  In de footer moet nog veel gebeuren qua CSS. Ik heb nu alleen de laatste section met ul een background-color gegeven van orange, want zo staat het ook op de volleybal.nl site.
+
   <img src="readme-images/css1.PNG" width="375px" alt="eerste deel CSS code">
   <img src="readme-images/css2.PNG" width="375px" alt="tweede deel CSS code">
   <img src="readme-images/html1.PNG" width="375px" alt="eerste deel Html code met favicon bovenin">
@@ -303,11 +305,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1 Donna Baijens     | student 2          | student 3    | student 4        |
-  | ---                         | ---                | ---          | ---              |
-  | dit bespreken               | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog              | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...                         | ...                | ...          | ...              |
+  | student 1 Donna Baijens                                         | student 2 Morpheus Seedo        | student 3 Ruby Heiting   | 
+  | ---                                                             | ---                             | ---                      | 
+  | carrousel met plaatjes                                          | Hoe kan ik meerdere img's in 
+                                                                      een section selecteren, terwijl 
+                                                                      er zoveel meerdere sections als 
+                                                                      img's in dezelfde footer (maar 
+                                                                      wel aparte section en/of 
+                                                                      article) staan?                 | klikbare bolletjes onder      carrousel                | 
+  | lijstjes onderaan hoe ik die moet vormgeven qua h3, h4 etc.     | ...                             | werkbare filter knoppen bij items             | 
+  | link met plaatjes, tekst, kop (en datum)                        | ...                             | ...                      | 
 
 
   ### Verslag van meeting
