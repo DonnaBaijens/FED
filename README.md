@@ -103,7 +103,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Focus doet de website
   <img src="readme-images/IMG_8184.jpg" width="375px" alt="Op Home pagina">
 
-  Met pijltjes op het toetsenbord kun je alleen scrollen.
+  Met pijltjes op het toetsenbord kun je alleen scrollen. Muis doet hij ook goed met scrollen.
 
   Tab werkt goed op het toetsenbord.
   <img src="readme-images/IMG_8186.jpg" width="375px" alt="Tab op link">
@@ -339,7 +339,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   samen met je groepje opstellen
 
   | student 1 Donna Baijens      | student 2 Morpheus Seedo         | student 3 Ruby Heiting   
-  | ---            | ---                | ---          
+  | ---            | ---                | Positionering          
   | Svg bij social media kloppend maken met kleuren en hover  | en dit             | Geen vragen    
   | en dat ook nog | dit als er tijd is | nog een punt 
   | ...            | ...                | ...          
@@ -348,8 +348,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
+  - Svg is gelukt bij social media om met hover een andere kleur te krijgen
+  - Hamburger menu gefixt met grootte fonts en toevoeging van social media
   - nog een punt
 - ...
 
@@ -369,26 +369,158 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  Links en headers doen het via H en K op het toetsenbord. Bij Windows kun je dit aanzetten met Caps lock en spatie
+  tegelijk ingedrukt houden. Zo kun je de scan aanzetten, zodat je op H en K kan klikken. Op Mac was het ook goed te volgen.
+  <img src="readme-images/IMG_8202.jpg" width="375px" alt="Link beachvolleybal">
+  <img src="readme-images/IMG_8203.jpg" width="375px" alt="Op link klikken">
+  <img src="readme-images/IMG_8565.jpg" width="375px" alt="Door site heengaan">
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Het was al goed bij mijn site. Met H ging hij alle headers af op de site en met K ging hij alle linkjes af op de site.
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  Website geeft duidelijk aan waar je bent met 'Home' in het hamburgermenu. 
+  Hover doet de website nog niet bij link en menu. Wel bij social media links. 
+  <img src="readme-images/IMG_8577.jpg" width="375px" alt="Hover over social media icoon link Facebook oranje op de site zelf">
+  <img src="readme-images/IMG_8578.jpg" width="375px" alt="Hover over social media icoon link Twitter blauw op de site zelf">
+  <img src="readme-images/IMG_8579.jpg" width="375px" alt="Hover over social media icoon link Instagram blauw in het hamburgermenu">
+
+  Active heeft de website nog niet.
+  
+  Focus doet de website met 'Home'.
+  <img src="readme-images/IMG_8580.jpg" width="375px" alt="Op Home pagina">
+
+  Met pijltjes op het toetsenbord kun je alleen scrollen. Muis doet hij ook goed met scrollen.
+  <img src="readme-images/IMG_8575.jpg" width="375px" alt="Scrollen met pijltjes">
+  <img src="readme-images/IMG_8576.jpg" width="375px" alt="Scrollen met muis">
+
+  Tab werkt goed op het toetsenbord.
+  <img src="readme-images/IMG_8571.jpg" width="375px" alt="Tab op link van 'Bekijk alle Eredivisiewedstrijden die zaterdag op het programma zijn'">
+  <img src="readme-images/IMG_8572.jpg" width="375px" alt="Tab op volleybal logo link linksboven in navigatie">
+  <img src="readme-images/IMG_8573.jpg" width="375px" alt="Tab op zoek icoon link in navigatie">
+  <img src="readme-images/IMG_8574.jpg" width="375px" alt="Tab op link van 'Booleans / VV Utrecht en Peelpush winnen op donderdagavond'">
+
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Active is wel leuk om nog toe te voegen, dat als je ergens op klikt, dat je dan snel een andere kleur ziet bijvoorbeeld. Verder moet ik hover nog toevoegen.
+  Verder is het logisch dat je met pijltjes alleen kan scrollen en de tab doet het verder goed.
 
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  Shocks was erg interessant om te proberen, want je bent het niet gewend om zulke trillingen bij je zenuwen te hebben.
+  Het was een gek gevoel. Typen ging lastiger, maar dat was niet nodig bij mijn site.
+  Het gaat eigenlijk gewoon niet om met Parksinson een website te besturen, het is heel moeilijk.
+  <img src="readme-images/IMG_8581.jpg" width="375px" alt="Website proberen met shocks">
+  <img src="readme-images/IMG_8582.jpg" width="375px" alt="Website proberen met shocks">
+  <img src="readme-images/IMG_8583.jpg" width="375px" alt="Website proberen met shocks">
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Dit is erg lastig om op te lossen, want niet veel mensen hebben het. Degene die het hebben, die kunnen het onder controle krijgen.
+  Misschien meer plaatjes dan tekst en sowieso niet iets van een typfunctie op je website, zodat dat in ieder geval geen probleem kan vormen.
 
+  Hier korte omschrijving (met indien nodig afbeeldingen)
+
+  Elastiekjes ging makkelijk en goed. Het werkt hetzelfde, alleen is het iets trager.
+  <img src="readme-images/IMG_8207.jpg" width="375px" alt="Scrollen op website">
+  <img src="readme-images/IMG_8209.jpg" width="375px" alt="Scrollen op website">
+  <img src="readme-images/IMG_8215.jpg" width="375px" alt="Met pijltjes op website">
+
+  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Een spraakfunctie toevoegen of eigenlijk de screenreader gebruiken.
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  De brillen waren erg interessant om mee te oefenen. Het spreekt voor zich dat je met deze brillen een stuk minder goed de website kunt bekijken en veel beperkingen hebt. 
+
+  <img src="readme-images/IMG_8564.jpg" width="375px" alt="Valena met de central field loss bril op">
+
+  Bril 1 peripheral field loss:
+  Bij deze bril zag Valena echt helemaal niks.
+  <img src="readme-images/IMG_8228.jpg" width="375px" alt="Peripheral field loss">
+
+  Bril 2 combined loss (diabetic eye disease):
+  Deze beperking is heel vermoeiend. De kleine tekst is niet te lezen. Er zijn allemaal vlekken, dus je moet echt kunnen inzoomen op je website. Valena zei dat ik social media iets groter moet maken. 
+  <img src="readme-images/IMG_8230.jpg" width="375px" alt="Combined loss">
+
+  Bril 3 central field loss:
+  Deze bril is heel irritant. Ze ziet allemaal zwarte vlekken en alleen de randjes ziet ze. Valena zei dat ik social media iets groter moet maken, de iconen met hover. 
+  <img src="readme-images/IMG_8231.jpg" width="375px" alt="Central field loss">
+
+  Bril 4 hemifield loss:
+  Alles ziet ze goed, geen problemen.
+  <img src="readme-images/IMG_8232.jpg" width="375px" alt="Hemifield loss">
+
+  Bril 5 blur/glare:
+  Deze bril is alleen leuk als je heel erg kunt inzoomen, anders is het niet te lezen. Valena zei dat ik inzoomen moet toevoegen, want anders ziet ze niks.
+  <img src="readme-images/IMG_8233.jpg" width="375px" alt="Blur/glare">
+
+  Bril 6 color:
+  Deze bril is goed te doen. Dit heeft mijn website al. Het enige wat Valena slecht zag, was de p bij de links van de kopjes met afbeeldingen gecombineerd, de datum onderaan die grijs is (bijvoorbeeld 'een dag geleden'). Oranje en blauw bij social media is goed te zien. Het gekleurde randje onder 'volleybal' (oranje) en 'beachvolleybal' (blauw) is slecht te zien, dikker maken. Oranje oogt rood.
+  <img src="readme-images/IMG_8234.jpg" width="375px" alt="Color">
+
+  Bril 7 low contrast:
+  Vergrootglas bij een kopje met afbeelding, zodat je alleen dat in beeld hebt, dus een soort pop-up. Misschien met responsive wordt het beter, maar dat moet ik nog toevoegen in mijn code. 
+  <img src="readme-images/IMG_8235.jpg" width="375px" alt="Low contrast">
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+  Het handigste is om vooral plaatjes te gebruiken. De kleine tekst valt weg, dus misschien grote tekst gebruiken.
+
+
+  Hier korte omschrijving (met indien nodig afbeeldingen)
+
+  Contrast/kleurenblindheid ging goed bij mijn website. Er is een goed contrast te zien en er is rekening gehouden met mensen die kleurenblind zijn. 
+
+  Contrastverlies/blurred vision
+  Je ziet niks, alleen de afbeeldingen en die zie je ook niet goed.  
+  <img src="readme-images/IMG_8566.jpg" width="375px" alt="Low contrast + inspector in beeld">
+
+  Achromatopsie (geen kleur)
+  Valena zei dat ik geen zwart als hover moet gebruiken, want dat zie je toch niet.
+  <img src="readme-images/IMG_8570.jpg" width="375px" alt="Low contrast + inspector in beeld">
+
+  Tritanopie (geen blauw)
+  Oranje is roze geworden. Je ziet alsnog blauw.
+  <img src="readme-images/IMG_8569.jpg" width="375px" alt="Low contrast + inspector in beeld">
+
+  Protanopie (geen rood)
+  Geen rood gebruiken. Blauw en oranje is duidelijk.
+  <img src="readme-images/IMG_8567.jpg" width="375px" alt="Low contrast + inspector in beeld">
+
+  Deuteranopie (geen groen)
+  Geen groen gebruiken.
+  <img src="readme-images/IMG_8568.jpg" width="375px" alt="Low contrast + inspector in beeld">
+
+  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+  Alles is over het algemeen duidelijk. Het enige is dat ik geen zwart als hover moet gebruiken, want dat zie je toch niet. 
+
+
+  Hier korte omschrijving (met indien nodig afbeeldingen)
+
+  De dark en light mode was makkelijk te zien: mijn website heeft geen dark mode, alleen een light mode. Als ik mijn laptop (Windows) naar dark mode zette, dan werden alleen mijn taakbalk en de browser zwart, de rest bleef wit.
+
+  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+  Hoe dit opgelost kan worden, is om een dark mode toe te voegen voor mijn website. Dit moet ik nog doen. 
+
+
+  
+
+  #### Afleiding met ballon
+  Hier korte omschrijving (met indien nodig afbeeldingen)
+  
+  De afleiding met ballon ging goed. De website was alsnog goed te bedienen, ook al was ze afgeleid. Carroussel valt weg, maar is dat echt zo belangrijk zegt ze, want het is reclame. De tekst is goeie grootte. Ze let meer op de prioriteiten dus niet op de datum van wanneer iets is geplaats (de p bij de links met kopjes en afbeeldingen). Afbeeldingen groter (weer met inzoomen) en kleuren weer dikker bij bijvoorbeeld 'Eredivisie dames' (roze) en de oranje en blauwe lijn bij 'volleybal' en 'beachvolleybal'.
+  <img src="readme-images/IMG_8216.jpg" width="375px" alt="Website bedienen met ballon">
+  <img src="readme-images/IMG_8219.jpg" width="375px" alt="Website bedienen met ballon">
+  <img src="readme-images/IMG_8221.jpg" width="375px" alt="Website bedienen met ballon">
+  <img src="readme-images/IMG_8224.jpg" width="375px" alt="Website bedienen met ballon">
+
+  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  
+  Ze kon de website al goed bedienen. Misschien meer plaatjes in plaats van tekst, zodat je door de plaatjes al snel kunt begrijpen waar het over gaat.
 
 </details>
 
