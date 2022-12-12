@@ -305,9 +305,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1 Donna Baijens                                         | student 2 Morpheus Seedo        | student 3 Ruby Heiting   | 
-  | ---                                                             | ---                             | ---                      | 
-  | carrousel met plaatjes                                          | Hoe kan ik meerdere img's in een section selecteren, terwijl er zoveel meerdere sections als img's in dezelfde footer (maar wel aparte section en/of article) staan? | klikbare bolletjes onder      carrousel                | 
+  | student 1 Donna Baijens  | student 2 Morpheus Seedo  | student 3 Ruby Heiting   | 
+  | ---                      | ---                       | ---                      | 
+  | carrousel met plaatjes   | Hoe kan ik meerdere img's in een section selecteren, terwijl er zoveel meerdere sections als img's in dezelfde footer (maar wel aparte section en/of article) staan? | klikbare bolletjes onder carrousel   | 
   | lijstjes onderaan hoe ik die moet vormgeven qua h3, h4 etc.     | ...                             | werkbare filter knoppen bij items             | 
   | link met plaatjes, tekst, kop (en datum)                        | ...                             | ...                      | 
 
@@ -317,8 +317,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   - Goed bezig, ga zo door!
   - Vragen besproken en hier kon ik mee verder.
-  - nog een punt
-  - ...
 
 </details>
 
@@ -333,6 +331,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Eerlijk gezegd gaat het steeds beter. Soms loop ik wel wat vast, maar dan helpt Sanne mij of Julia. Verder heb ik vaak dat ik het vanbinnen wel weet, maar dat het altijd nog even gezegd moet worden voordat ik het zelf ook door heb of snap. Ik ben bezig met social media kloppend maken. Html en CSS zou ik graag willen laten zien, maar dan worden het wel heel erg veel foto's, dus dat ziet u bij het mondeling :).
+
+  <img src="readme-images/socialmedia.PNG" width="375px" alt="social media met oranje en blauw">
+  <img src="readme-images/hamburgermenu.PNG" width="375px" alt="social media in hamburgermenu">
 
 
   ### Agenda voor meeting
@@ -350,8 +352,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   - Svg is gelukt bij social media om met hover een andere kleur te krijgen
   - Hamburger menu gefixt met grootte fonts en toevoeging van social media
-  - nog een punt
-- ...
 
 </details>
 
@@ -534,26 +534,31 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik ben verder gegaan met de pagina's. De tweede pagina is zo goed als af. Ik heb een vraag over de zoekfunctie en over de slider op de tweede pagina. Verder ben ik aan de slag gegaan met Javascript voor hamburgermenu en na vandaag de slider en uiteindelijk zelf voor de zoekfunctie. Ik moet wel echt alle kleuren in de custom properties gaan zetten. Verder ga ik nog een light/dark mode toevoegen.
+
+  <img src="readme-images/zoeken.PNG" width="375px" alt="Zoekfunctie">
+  <img src="readme-images/slider.PNG" width="375px" alt="Slider tweede pagina">
+  <img src="readme-images/darkpagina1.PNG" width="375px" alt="Dark mode pagina 1">
+  <img src="readme-images/darkpagina2.PNG" width="375px" alt="Dark mode pagina 2">
+  
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | student 1 Donna Baijens     | student 2 Morpheus Seedo         | student 3 Ruby Heiting   | student 4        |
+  | ---            | ---                | Klikbare carroussel en kleine dingen die niet lukte om te fixen          | ---              |
+  | zoekfunctie en zoekbalk  | en dit             | en ik dit    | en dan ik dat    |
+  | hoe maak ik slider aan het begin van tweede pagina | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - slider is gelukt bij tweede pagina
+  - custom properties toevoegen
+  - light/dark mode
 
 </details>
 
@@ -567,19 +572,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/pagina1.PNG" width="375px" alt="Begin pagina 1">
+  <img src="readme-images/pagina2.PNG" width="375px" alt="Begin pagina 2">
+  <img src="readme-images/eindepagina1.PNG" width="375px" alt="Einde pagina 1 en 2">
+
+  <img src="readme-images/darkpagina1.PNG" width="375px" alt="Dark mode pagina 1">
+  <img src="readme-images/darkpagina2.PNG" width="375px" alt="Dark mode pagina 2">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb geleerd hoe ik een carroussel en een slider maak. Verder heb ik nog meer Html, CSS en Javascript geleerd. Ik vond het heel leuk om mijn site na te maken en ik vind hem goed gelukt. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/carroussel.PNG" width="375px" alt="Carroussel met reclame en sponsoren">
+  <img src="readme-images/slider.PNG" width="375px" alt="Slider tweede pagina">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Het is niet gelukt om het account icoon uit te werken met inloggen. Dit kan ik wel, maar ik had er simpelweg geen tijd voor en dat geef ik eerlijk toe. Verder was het vaak puzzelen, maar ben ik er wel altijd uitgekomen.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/account.PNG" width="375px" alt="Account icoon navigatie">
 </details>
 
 
@@ -593,8 +604,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. bron 1: https://codyhouse.co/nuggets/css-gradient-borders
+  2. bron 2: https://codepen.io/shooft/pen/dymRMBZ
+  3. bron 3: https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html
+  4. bron 4: Sanne 't Hooft
+  5. bron 5: Studentassistenten
+
 
 </details>
