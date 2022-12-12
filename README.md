@@ -581,7 +581,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Ik heb geleerd hoe ik een carroussel en een slider maak. Verder heb ik nog meer Html, CSS en Javascript geleerd. Ik vond het heel leuk om mijn site na te maken en ik vind hem goed gelukt. 
+  Ik heb geleerd hoe ik een carroussel en een slider maak. Verder heb ik nog meer Html, CSS en Javascript geleerd. Ik vond het heel leuk om mijn site na te maken en ik vind hem goed gelukt. Verder heb ik geleerd om light en dark mode toe te voegen en om te werken met media queries.
 
   <img src="readme-images/carroussel.PNG" width="375px" alt="Carroussel met reclame en sponsoren">
   <img src="readme-images/slider.PNG" width="375px" alt="Slider tweede pagina">

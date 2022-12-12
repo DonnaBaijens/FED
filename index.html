@@ -9,12 +9,14 @@
 	<title>volleybal.nl</title>
 	
 	<link href="styles/homestyle.css" rel="stylesheet">
+	<link href="styles/alles.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.png">
 </head>
 
 <body>
 
 	<header>
+		<h1 class="visually-hidden">Welkom op Volleybal.nl!</h1>
 
 		<nav>
 			<a href="#"><img src="images/logo-volleybal.svg" alt="Volleybal logo"></a>
@@ -55,9 +57,35 @@
 			</button>
 		</nav>
 
+		<form>
+
+            <label class="visually-hidden" for="search">Zoeken</label>
+
+            <input id="search" type="search" placeholder="Zoek een team, vereniging, laatste nieuws">
+
+            <button type="submit">
+
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 14 14" version="1.1">
+					<title>Icon - Search</title>
+					<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<g id="Navigations/Utility-bar/Desktop/_Base" transform="translate(-1190.000000, -13.000000)">
+							<g id="Utility-navigation-bar" transform="translate(90.000000, 9.000000)">
+								<g id="zoek-icon" transform="translate(843.000000, 4.000000)">
+									<path d="M271,12.9313333 C271,13.2226791 270.889488,13.4738345 270.668472,13.6848072 C270.447455,13.8957798 270.196292,14.0012662 269.914998,14.0012662 C269.613608,14.0012662 269.362453,13.8957798 269.161524,13.6848072 L266.283254,10.8065372 C265.278625,11.4997331 264.158458,11.846331 262.922761,11.846331 C262.119053,11.846331 261.350509,11.6906106 260.617131,11.3791773 C259.883752,11.0677439 259.255852,10.6457986 258.733446,10.1133413 C258.21104,9.58088392 257.789095,8.95299158 257.46761,8.22965671 C257.146126,7.50632185 256.990413,6.73777855 257.000456,5.92402683 C257.0105,5.1102751 257.166221,4.34675748 257.46761,3.63346642 C257.769,2.92017536 258.190945,2.28725735 258.733446,1.73471239 C259.275947,1.18216744 259.90384,0.760222098 260.617131,0.468876376 C261.330422,0.177530655 262.098965,0.0218177554 262.922761,0.00172260864 C263.746556,-0.0183725381 264.515099,0.137347896 265.228391,0.468876376 C265.941682,0.800404857 266.569574,1.2223502 267.112075,1.73471239 C267.654576,2.24707459 268.076522,2.8799926 268.377911,3.63346642 C268.679301,4.38694024 268.835021,5.15045786 268.845065,5.92402683 C268.845065,7.15972389 268.498467,8.27989081 267.805271,9.28452006 L270.683541,12.16279 C270.894514,12.3737627 271,12.6299438 271,12.9313333 M266.69013,5.92402683 C266.69013,4.88925863 266.323437,4.00517766 265.590058,3.27179898 C264.856679,2.53842031 263.96758,2.16670154 262.922761,2.15665773 C261.877941,2.14661392 260.988842,2.51832516 260.255463,3.27179898 C259.522085,4.0252728 259.155392,4.90934624 259.155392,5.92402683 C259.155392,6.93870741 259.522085,7.82780652 260.255463,8.59132415 C260.988842,9.35484177 261.877941,9.72153487 262.922761,9.69139592 C263.96758,9.66125697 264.856679,9.29456386 265.590058,8.59132415 C266.323437,7.88808443 266.69013,6.99898532 266.69013,5.92402683"/>
+								</g>
+							</g>
+						</g>
+					</g>
+				</svg>
+
+            </button>
+
+			<button>X</button>
+        </form>
+
 		<nav> 
 			<ul>
-				<li><a href="#">Home</a></li>
+				<li><a class="active" href="#">Home</a></li>
 				<li><a href="#">Volleybal</a></li>
 				<li><a href="#">Beachvolleybal</a></li>
 				<li><a href="#">Zitvolleybal</a></li>
@@ -73,29 +101,23 @@
 			<section>
 				<h4><span>Volleybal</span> op social media</h4>
 				<ul>
-					<li><a href="" aria-label=""naar fb van de volleyballers></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
+					<li><a href="" aria-label="naar facebook van de volleyballers"></a></li>
+					<li><a href="" aria-label="naar twitter van de volleyballers"></a></li>
+					<li><a href="" aria-label="naar instagram van de volleyballers"></a></li>
 				</ul>
 	
 				<h4><span>Beachvolleybal</span> op social media</h4>
 				<ul>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
+					<li><a href="" aria-label="naar facebook van de volleyballers"></a></li>
+					<li><a href="" aria-label="naar twitter van de volleyballers"></a></li>
+					<li><a href="" aria-label="naar instagram van de volleyballers"></a></li>
 				</ul>
 			</section>
 		</nav>
-
-		<!-- <form action=""></form> -->
 	</header>
 
 
 	<main>
-		<h1 class="visually-hidden">Volleybal</h1>
-
-		
-
 		<section>
 			<ul>
 				<li class="volleybytes"><a href="#"><div>
@@ -245,8 +267,6 @@
 			</ul>
 			<p>©2022 Nevobo</p>
 		</section>
-
-
 	</footer>
 
 	<script defer src="scripts/script.js"></script>

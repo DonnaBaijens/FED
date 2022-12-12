@@ -1,325 +1,15 @@
-/**************/
-/* CSS REMEDY */
-/**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
-  margin:0;
-  padding:0;
+/* focus state */
+header a:focus, main section ul:nth-of-type(1) li a:focus, main section ul:nth-of-type(2) li a:focus, footer section:nth-of-type(2) ul li a:focus, footer section:nth-of-type(3) ul li a:focus, footer section:nth-of-type(4) ul li a:focus, footer section:nth-of-type(5) ul li a:focus, footer section:nth-of-type(6) ul li a:focus {
+	background-color: var(--color-focus);
+	box-shadow: inset 0 0 0 .075em var(--color-focus); 
 }
 
-button, summary {
-	cursor: pointer;
+/* active state */
+header a:active, main section ul:nth-of-type(1) li a:active, main section ul:nth-of-type(2) li a:active, footer section:nth-of-type(2) ul li a:active, footer section:nth-of-type(3) ul li a:active, footer section:nth-of-type(4) ul li a:active, footer section:nth-of-type(5) ul li a:active, footer section:nth-of-type(6) ul li a:active {
+	background-color: var(--color-black);
 }
 
-
-
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
-	--brand-color:#f05e16;
-	--light-brand-color:#ffb347;
-}
-
-@font-face {
-	font-family: Geogrotesque;
-	src: url(../fonts/FontsFree-Net-Geogtq-Rg.otf);
-}
-
-
-
-/****************/
-/* JOUW STYLING */
-/****************/
-/* jouw code */
-
-/* header {
-	background-color: orange;
-} */
-
-body {
-	overflow-X: hidden;
-}
-
-h1, h2, h3, h4, ul, li, p, a {
-	font-family: 'Geogrotesque', 'Arial', 'sans-serif';
-}
-
-/* bron: https://codyhouse.co/nuggets/css-gradient-borders */
-header {
-	border-image: linear-gradient(to left, #f05e16, #ffb347, #f05e16, #ffb347) 1;
-	border-width: .25em;
-	border-top-style: solid;
-	padding: 1em;
-
-}
-
-header nav:first-of-type {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-button {
-
-	display:grid;
-  	grid-template-rows:1fr min-content;
-
-	border: none;
-
-	z-index: 150;
-	background-color: white;
-}
-
-button span {
-	grid-row-start:1;
-  	grid-column-start:1;
-  	place-self:end center;
-
-	width:1.2rem;
-	height:.2rem;
-	background-color: #000000;
-
-	transition-duration:.5s;
-}
-
-button span:nth-of-type(1) {
-	transform:translateY(-.4em);
-
-}
-
-button span:nth-of-type(3) {
-	transform:translateY(.4em);
-
-}
-
-button.openMenu span:nth-of-type(1){
-	transform: rotate(45deg);
-}
-
-button.openMenu span:nth-of-type(2){
-	opacity: 0;
-}
-
-button.openMenu span:nth-of-type(3){
-	transform: rotate(-45deg);
-}
-
-
-
-header nav:nth-of-type(2) {
-	position: fixed;
-	top:4.23375em;
-	bottom:0;
-	left:0;
-	right:0;
-	overflow: auto;
-	z-index: 100;
-
-	transform: translateX(100%);
-	transition: .5s;
-
-	background-color: white;
-
-}
-
-header nav:nth-of-type(2).open {
-	transform: translateX(0%);
-}
-
-header nav:nth-of-type(2) ul {
-	padding-top: .7em;
-	padding-bottom: .7em;
-	margin-left: 1em;
-}
-
-header nav:nth-of-type(2) > ul:nth-of-type(1) {
-	font-size: 1.5em;
-}
-
-header nav:nth-of-type(2) > ul:nth-of-type(1) li:nth-of-type(1) a {
-	color: #ff7e00;
-}
-
-header nav:nth-of-type(2) > ul:nth-of-type(2) {
-	padding-top: .7em;
-	padding-bottom: .7em;
-
-	margin-left: 1.5em;
-}
-
-header nav:nth-of-type(2) li {
-	display: grid;
-	place-content: left;
-	padding-top: .2em;
-	padding-bottom: .2em;
-}
-
-header nav:nth-of-type(2) ul li a {
-	text-decoration: none;
-}
-
-/* social media */
-nav:nth-of-type(2) section h4 {
-	text-align: left;
-	padding-top: 1.4em;
-
-	margin-left: 1.5em;
-}
-
-nav:nth-of-type(2) section ul {
-	padding-top: .7em;
-	padding-bottom: .7em;
-
-	display:flex;
-	justify-content: left;
-	gap:.3em;
-
-	margin-left: 1.5em;
-}
-
-nav:nth-of-type(2) section ul a {
-	position: relative;
-	display:block;
-	width:2.75em;
-	aspect-ratio: 1/1;
-	border-radius: 50%;
-	background-color: white;
-	box-shadow: inset 0 0 0 .075em #ccc;
-}
-
-nav:nth-of-type(2) section ul:nth-of-type(1) a:hover {
-	background-color: #ff7e00;
-	box-shadow: inset 0 0 0 .075em #ff7e00;
-
-}
-
-nav:nth-of-type(2) section ul:nth-of-type(2) a:hover {
-	background-color: #00b7e2;
-	box-shadow: inset 0 0 0 .075em #00b7e2;
-
-}
-
-nav:nth-of-type(2) section ul:nth-of-type(1) li:nth-of-type(1) a {
-
-	background-image: url(../images/icons8-facebook-f.svg);
-	background-size: 1.5em;
-	background-position: center;
-
-	background-repeat: no-repeat;
-}
-
-nav:nth-of-type(2) section ul:nth-of-type(1) li:nth-of-type(1) a:hover {
-	background-image: url(../images/icons8-facebook-f1.svg);
-}
-
-nav:nth-of-type(2) section ul:nth-of-type(1) li:nth-of-type(2) a {
-	background-image: url(../images/icons8-twitter.svg);
-	background-size: 1.5em;
-	background-position: center;
-
-	background-repeat: no-repeat;
-}
-
-nav:nth-of-type(2) section ul:nth-of-type(1) li:nth-of-type(2) a:hover {
-	background-image: url(../images/icons8-twitter1.svg);
-}
-
-
-nav:nth-of-type(2) section ul:nth-of-type(1) li:nth-of-type(3) a {
-	background-image: url(../images/icons8-instagram.svg);
-	background-size: 1.5em;
-	background-position: center;
-
-	background-repeat: no-repeat;
-}
-
-nav:nth-of-type(2) section ul:nth-of-type(1) li:nth-of-type(3) a:hover {
-	background-image: url(../images/icons8-instagram2.svg);
-}
-
-nav:nth-of-type(2) section ul:nth-of-type(2) li:nth-of-type(1) a {
-	background-image: url(../images/icons8-facebook-fv.svg);
-	background-size: 1.5em;
-	background-position: center;
-
-	background-repeat: no-repeat;
-}
-
-nav:nth-of-type(2) section ul:nth-of-type(2) li:nth-of-type(1) a:hover {
-	background-image: url(../images/icons8-facebook-f1.svg);
-}
-
-nav:nth-of-type(2) section ul:nth-of-type(2) li:nth-of-type(2) a {
-	background-image: url(../images/icons8-twitterv.svg);
-	background-size: 1.5em;
-	background-position: center;
-
-	background-repeat: no-repeat;
-}
-
-nav:nth-of-type(2) section ul:nth-of-type(2) li:nth-of-type(2) a:hover {
-	background-image: url(../images/icons8-twitter1.svg);
-}
-
-nav:nth-of-type(2) section ul:nth-of-type(2) li:nth-of-type(3) a {
-	background-image: url(../images/icons8-instagramv.svg);
-	background-size: 1.5em;
-	background-position: center;
-
-	background-repeat: no-repeat;
-}
-
-nav:nth-of-type(2) section ul:nth-of-type(2) li:nth-of-type(3) a:hover {
-	background-image: url(../images/icons8-instagram2.svg);
-}
-
-nav:nth-of-type(2) section h4:nth-of-type(1) span:nth-of-type(1) {
-	text-decoration: underline #ff7e00;
-}
-
-nav:nth-of-type(2) section h4:nth-of-type(2) span:nth-of-type(1) {
-	text-decoration: underline #00b7e2;
-}
-
-header nav:first-of-type a:first-of-type img:first-of-type {
-	width: 8em;
-}
-
-header nav:first-of-type a:last-of-type img {
-	width: 2em;
-}
-
-
-ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-
-#zoek-icon path {
-	fill: #000000;
-}
-
-#account-icon circle {
-	stroke:#000000;
-	stroke-width:1.5;
-}
-
-#account-icon path {
-	fill:#000000;
-}
-
-main img {
-	width: 100%;
-}
-
+/* lijnen weghalen en onder elkaar */
 main section:nth-of-type(1) a, 
 main section:nth-of-type(2) a {
 	position: relative;
@@ -328,7 +18,7 @@ main section:nth-of-type(2) a {
 }
 
 
-/* eerste in lijst  */
+/* eerste in lijst groter */
 main section:nth-of-type(1) li:nth-of-type(1) div, 
 main section:nth-of-type(2) li:nth-of-type(1) div {
 	position: absolute;
@@ -337,46 +27,55 @@ main section:nth-of-type(2) li:nth-of-type(1) div {
 	bottom:0;
 	padding:1em;
 
-	background-color: #0003;
+	background-color: var(--color-div);
 }
 
+/* eerste een witte kleur geven h3 */
 main section:nth-of-type(1) li:nth-of-type(1) div h3, 
 main section:nth-of-type(2) li:nth-of-type(1) div h3 {
-	color: white;
+	color: var(--color-white);
 }
 
+/* witte kleur met class */
 main section ul li.volleybytes h4 {
-	color: white;
+	color: var(--color-white);
 }
 
+/* oranje kleur met class */
 main section ul li.oranje h4 {
-	color: #ff7e00;
+	color: var(--hoofd-oranje);
 }
 
+/* blauwe kleur eredivisie en eredivisie heren met class */
 main section ul li.eredivisie h4 {
-	color: #006fb8;
+	color: var(--color-eredivisieh);
 }
 
+/* roze kleur eredivisie dames met class */
 main section ul li.eredivisiedames h4 {
-	color: #dc2261;
+	color: var(--color-eredivisied);
 }
 
+/* blauwe kleur eredivisie en eredivisie heren met class */
 main section ul li.eredivisieheren h4 {
-	color: #006fb8;
+	color: var(--color-eredivisieh);
 }
 
+/* h4 naast p */
 main section:nth-of-type(1) li:nth-of-type(1) div h4, 
 main section:nth-of-type(2) li:nth-of-type(1) div h4 {
 	/* color: orange; */
 	display: inline;
 }
 
+/* h4 naast p */
 main section:nth-of-type(1) li:nth-of-type(1) div p, 
 main section:nth-of-type(2) li:nth-of-type(1) div p {
-	color: white;
+	color: var(--color-white);
 	display: inline;
 }
 
+/* groot plaatje door cover en hoogte */
 main section:nth-of-type(1) li:nth-of-type(1) a img,
 main section:nth-of-type(2) li:nth-of-type(1) a img {
 	height:16em;
@@ -384,7 +83,7 @@ main section:nth-of-type(2) li:nth-of-type(1) a img {
 }
 
 
-/* andere in lijst */
+/* andere in lijst kleiner, row reverse is plaatje eerst dan tekst */
 main section:nth-of-type(1) li:not(:nth-of-type(1)) a,
 main section:nth-of-type(2) li:not(:nth-of-type(1)) a {
 	display: flex;
@@ -396,16 +95,19 @@ main section:nth-of-type(2) li:not(:nth-of-type(1)) a {
 	padding: 1em;
 }
 
+/* zwarte kleur h3 */
 main section:nth-of-type(1) li:not(:nth-of-type(1)) a h3,
 main section:nth-of-type(2) li:not(:nth-of-type(1)) a h3 {
-	color: black;
+	color: var(--color-black);
 }
 
+/* grijze kleur p */
 main section:nth-of-type(1) li:not(:nth-of-type(1)) a p,
 main section:nth-of-type(2) li:not(:nth-of-type(1)) a p {
-	color: #808080;
+	color: var(--color-p);
 }
 
+/* image padding, breedte en hoogte min content zodat hij precies naast tekst past*/
 main section:nth-of-type(1) li:not(:nth-of-type(1)) img,
 main section:nth-of-type(2) li:not(:nth-of-type(1)) img {
 	width: 8em;
@@ -415,306 +117,13 @@ main section:nth-of-type(2) li:not(:nth-of-type(1)) img {
 }
 
 
-
-
-.visually-hidden {
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
-}
- 
-footer > ul {
-	animation: slider 16s infinite linear alternate;
-	width:400vw;
-	display: flex;
-	gap: .3em;
-	padding-top: .7em;
-	padding-bottom: .7em;
+/* hover state */
+main section:nth-of-type(1) li a:hover {
+	background-color: var(--color-hover);
 }
 
-footer > ul li {
-	width: 50vw;
+/* hover state */
+main section:nth-of-type(2) li a:hover {
+	background-color: var(--color-hover);
 }
 
-footer > ul li a {
-	padding: 1em;
-}
-
-footer > ul li a img {
-	width: 80%;
-}
-
-@keyframes slider {
-	0% {
-		transform: translateX(0vw);
-	}
-
-	16% {
-		transform: translateX(0vw);
-	}
-
-	28% {
-		transform: translateX(-100vw);
-	}
-
-	44% {
-		transform: translateX(-100vw);
-	}
-
-	56% {
-		transform: translateX(-200vw);
-	}
-
-	72% {
-		transform: translateX(-200vw);
-	}
-	84% {
-		transform: translateX(-300vw);
-	}
-
-	100% {
-		transform: translateX(-300vw);
-	}
-}
-
-/* nederlandse postcodeloterij */
-footer > a img:nth-of-type(1) {
-	width: 100%;
-	padding-top: .7em;
-	padding-bottom: .7em;
-}
-
-/* volleybal logo */
-footer section:nth-of-type(1) img {
-	width: 70%;
-	margin: auto;
-}
-
-footer section {
-	text-align: center;
-	padding-top: .7em;
-	padding-bottom: .7em;
-}
-
-/* social media */
-footer section:nth-of-type(2) ul {
-	padding-top: .7em;
-	padding-bottom: .7em;
-
-	display:flex;
-	justify-content: center;
-	gap:.3em;
-}
-
-footer section:nth-of-type(2) ul a {
-	position: relative;
-	display:block;
-	width:2.75em;
-	aspect-ratio: 1/1;
-	border-radius: 50%;
-	background-color: white;
-	box-shadow: inset 0 0 0 .075em #ccc;
-}
-
-footer section:nth-of-type(2) ul:nth-of-type(1) a:hover {
-	background-color: #ff7e00;
-	box-shadow: inset 0 0 0 .075em #ff7e00;
-
-}
-
-footer section:nth-of-type(2) ul:nth-of-type(2) a:hover {
-	background-color: #00b7e2;
-	box-shadow: inset 0 0 0 .075em #00b7e2;
-
-}
-
-
-/* footer section:nth-of-type(2) ul a::after {
-	content:"";
-
-	position: absolute;
-	inset:0;
-	border-radius:inherit;
-	color:red;
-	background-color: green;
-
-	background-image: url(../images/google-play.png);
-	background-size: contain;
-	background-position: center;
-
-	background-repeat: no-repeat;
-} */
-
-footer section:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(1) a {
-
-	background-image: url(../images/icons8-facebook-f.svg);
-	background-size: 1.5em;
-	background-position: center;
-
-	background-repeat: no-repeat;
-}
-
-footer section:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(1) a:hover {
-	background-image: url(../images/icons8-facebook-f1.svg);
-}
-
-footer section:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(2) a {
-	background-image: url(../images/icons8-twitter.svg);
-	background-size: 1.5em;
-	background-position: center;
-
-	background-repeat: no-repeat;
-}
-
-footer section:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(2) a:hover {
-	background-image: url(../images/icons8-twitter1.svg);
-}
-
-
-footer section:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(3) a {
-	background-image: url(../images/icons8-instagram.svg);
-	background-size: 1.5em;
-	background-position: center;
-
-	background-repeat: no-repeat;
-}
-
-footer section:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(3) a:hover {
-	background-image: url(../images/icons8-instagram2.svg);
-}
-
-footer section:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(1) a {
-	background-image: url(../images/icons8-facebook-fv.svg);
-	background-size: 1.5em;
-	background-position: center;
-
-	background-repeat: no-repeat;
-}
-
-footer section:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(1) a:hover {
-	background-image: url(../images/icons8-facebook-f1.svg);
-}
-
-footer section:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(2) a {
-	background-image: url(../images/icons8-twitterv.svg);
-	background-size: 1.5em;
-	background-position: center;
-
-	background-repeat: no-repeat;
-}
-
-footer section:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(2) a:hover {
-	background-image: url(../images/icons8-twitter1.svg);
-}
-
-footer section:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(3) a {
-	background-image: url(../images/icons8-instagramv.svg);
-	background-size: 1.5em;
-	background-position: center;
-
-	background-repeat: no-repeat;
-}
-
-footer section:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(3) a:hover {
-	background-image: url(../images/icons8-instagram2.svg);
-}
-
-footer section:nth-of-type(3) ul {
-	padding-top: .7em;
-	padding-bottom: .7em;
-}
-
-footer section:nth-of-type(4) ul {
-	padding-top: .7em;
-	padding-bottom: .7em;
-}
-
-footer section:nth-of-type(3) ul li {
-	padding-top: .2em;
-	padding-bottom: .2em;
-}
-
-footer section:nth-of-type(4) ul li {
-	padding-top: .2em;
-	padding-bottom: .2em;
-}
-
-footer section:nth-of-type(3) ul li a, footer section:nth-of-type(4) ul li a {
-	text-decoration: none;
-}
-
-footer section:nth-of-type(5) ul {
-	padding-top: .7em;
-	padding-bottom: .7em;
-}
-
-footer section:nth-of-type(1) p {
-	text-align: center;
-	margin: auto;
-	width: 70%;
-}
-
-footer section:nth-of-type(1) {
-	display: flex;
-	flex-direction: column;
-	gap: .3em;
-}
-
-footer section:nth-of-type(2) h4:nth-of-type(1) span:nth-of-type(1) {
-	text-decoration: underline #ff7e00;
-}
-
-footer section:nth-of-type(2) h4:nth-of-type(2) span:nth-of-type(1) {
-	text-decoration: underline #00b7e2;
-}
-
-footer section:nth-of-type(5) h4:nth-of-type(1) span:nth-of-type(1) {
-	text-decoration: underline #ff7e00;
-}
-
-footer section:nth-of-type(5) h4:nth-of-type(2) span:nth-of-type(1) {
-	text-decoration: underline #00b7e2;
-}
-
-footer section:nth-of-type(5) ul {
-	display: flex;
-	justify-content: center;
-	gap: .4em;
-}
-
-footer section:nth-of-type(5) ul li a img {
-	flex-wrap: wrap;
-	width: 9em;
-}
-
-footer section:nth-of-type(5) p:nth-of-type(1) {
-	padding-top: .7em;
-	padding-bottom: .7em;
-}
-
-footer section:nth-of-type(5) p:nth-of-type(2) {
-	padding-top: .7em;
-	padding-bottom: .7em;
-}
-
-footer section:nth-of-type(6) {
-	background-color: #ff7e00;
-}
-
-footer section:nth-of-type(6) li {
-	padding: .3em;
-}
-
-footer section:nth-of-type(6) li a {
-	color: white;
-	text-decoration: none;
-}
-
-footer section:nth-of-type(6) p {
-	padding-top: 1.3em;
-	color: white;
-}

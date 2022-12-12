@@ -1,0 +1,780 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+    box-sizing:border-box;  
+    margin:0;
+    padding:0;
+  }
+  
+  button, summary {
+      cursor: pointer;
+  }
+  
+  
+  
+  
+  
+  /*********************/
+  /* CUSTOM PROPERTIES */
+  /*********************/
+  :root {
+      /* startje */
+      --color-text:#111;
+      --color-background:#eee;
+      --brand-color:#f05e16;
+      --light-brand-color:#ffb347;
+      --color-focus: #ffa54c;
+      --color-gradient1:#f05e16;
+      --color-gradient2:#ffb347;
+      --hoofd-oranje:#ff7e00;
+      --color-white: #ffffff;
+      --color-black:#000000;
+      --socialmedia-grijs:#ccc;
+      --hoofd-blauw:#00b7e2;
+      --color-div:#0003;
+      --color-eredivisieh:#006fb8;
+      --color-eredivisied:#dc2261;
+      --color-p:#808080;
+      --color-hover:#d7d7d7;
+      --color-grijsachtergrond:#ececec;
+      
+
+  }
+  
+
+  /* dark mode */
+  @media (prefers-color-scheme:dark) {
+      :root {
+        --color-text:#eee;
+        --color-background:#111;
+        --color-focus: #ffa54c;
+        --color-gradient1:#f05e16;
+        --color-gradient2:#ffb347;
+        --hoofd-oranje:#ff7e00;
+        --color-white: #000000;
+        --color-black:#ffffff;
+        --socialmedia-grijs:rgb(54, 49, 49);
+        --hoofd-blauw:#00b7e2;
+        --color-div:rgba(48, 47, 47, 0.2);
+        --color-eredivisieh:#006fb8;
+        --color-eredivisied:#dc2261;
+        --color-p:#3e3c3c;
+        --color-hover:#a8a4a4;
+        --color-grijsachtergrond:#6d6868;
+      }
+  }
+
+  @media screen and (max-width: 768px) {
+    body {
+      background-color: #333;
+      color: #3498db;
+    }
+ }
+  
+  /* lettertype hele website */
+  @font-face {
+      font-family: Geogrotesque;
+      src: url(../fonts/FontsFree-Net-Geogtq-Rg.otf);
+  }
+  
+  
+  
+  /****************/
+  /* JOUW STYLING */
+  /****************/
+  /* jouw code */
+  
+  /* header {
+      background-color: orange;
+  } */
+  
+  body {
+      overflow-X: hidden;
+      background-color: var(--color-white);
+  }  
+  
+  /* lettertype hele website */
+  h1, h2, h3, h4, ul, li, p, a {
+      font-family: 'Geogrotesque', 'Arial', 'sans-serif';
+  }
+
+  
+  /* bron: https://codyhouse.co/nuggets/css-gradient-borders */
+  /* gradient bovenaan */
+  header {
+      border-image: linear-gradient(to left, var(--color-gradient1), var(--color-gradient2), var(--color-gradient1), var(--color-gradient2)) 1;
+      border-width: .25em;
+      border-top-style: solid;
+      padding: 1em;
+  
+  }
+  
+  /* nav naast elkaar */
+  header nav:first-of-type {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  /* hover state */
+  header nav:nth-of-type(1) a:hover {
+      border: var(--hoofd-oranje) .2em solid;
+      padding: .2em;
+  }
+  
+  header nav:nth-of-type(2) > ul a:hover {
+      text-decoration: underline .1em var(--hoofd-oranje);
+  }
+  
+  
+  /* https://codepen.io/shooft/pen/dymRMBZ */
+  /* kruis */
+  button {
+  
+      display:grid;
+        grid-template-rows:1fr min-content;
+  
+      border: none;
+  
+      z-index: 100;
+      background-color: var(--color-white);
+  }
+  
+  button span {
+      grid-row-start:1;
+        grid-column-start:1;
+        place-self:end center;
+  
+      width:1.2rem;
+      height:.2rem;
+      background-color: var(--color-black);
+  
+      transition-duration:.5s;
+  }
+  
+  button span:nth-of-type(1) {
+      transform:translateY(-.4em);
+  
+  }
+  
+  button span:nth-of-type(3) {
+      transform:translateY(.4em);
+  
+  }
+  
+  button.openMenu span:nth-of-type(1){
+      transform: rotate(45deg);
+  }
+  
+  button.openMenu span:nth-of-type(2){
+      opacity: 0;
+  }
+  
+  button.openMenu span:nth-of-type(3){
+      transform: rotate(-45deg);
+  }
+  
+  
+  /* hamburgermenu */
+  header nav:nth-of-type(2) {
+      position: fixed;
+      top:4.23375em;
+      bottom:0;
+      left:0;
+      right:0;
+      overflow: auto;
+      z-index: 150;
+  
+      transform: translateX(100%);
+      transition: .5s;
+  
+      background-color: var(--color-white);
+  
+  }
+  
+  /* javascript met class zodat menu open gaat */
+  header nav:nth-of-type(2).open {
+      transform: translateX(0%);
+  }
+  
+  header nav:nth-of-type(2) ul {
+      padding-top: .7em;
+      padding-bottom: .7em;
+      margin-left: 1em;
+  }
+  
+  header nav:nth-of-type(2) > ul:nth-of-type(1) {
+      font-size: 1.5em;
+  }
+  
+  /* active state */
+  header nav:nth-of-type(2) > ul:nth-of-type(1) li a.active {
+      color: var(--hoofd-oranje);
+  }
+  
+  header nav:nth-of-type(2) > ul:nth-of-type(2) {
+      padding-top: .7em;
+      padding-bottom: .7em;
+  
+      margin-left: 1.5em;
+  }
+  
+  /* grid voor alle li links */
+  header nav:nth-of-type(2) li {
+      display: grid;
+      place-content: left;
+      padding-top: .2em;
+      padding-bottom: .2em;
+  }
+  
+  /* streepjes weghalen */
+  header nav:nth-of-type(2) ul li a {
+      text-decoration: none;
+  }
+  
+  /* social media */
+  nav:nth-of-type(2) section h4 {
+      text-align: left;
+      padding-top: 1.4em;
+  
+      margin-left: 1.5em;
+  }
+  
+  /* social media naast elkaar in hamburgermenu */
+  nav:nth-of-type(2) section ul {
+      padding-top: .7em;
+      padding-bottom: .7em;
+  
+      display:flex;
+      justify-content: left;
+      gap:.3em;
+  
+      margin-left: 1.5em;
+  }
+  
+  /* social media */
+  nav:nth-of-type(2) section ul a {
+      position: relative;
+      display:block;
+      width:2.75em;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      background-color: var(--color-white);
+      box-shadow: inset 0 0 0 .075em var(--socialmedia-grijs);
+      transition: .5s;
+  }
+  
+  /* hover state */
+  nav:nth-of-type(2) section ul:nth-of-type(1) a:hover {
+      background-color: var(--hoofd-oranje);
+      box-shadow: inset 0 0 0 .075em var(--hoofd-oranje);
+  
+  }
+  
+  nav:nth-of-type(2) section ul:nth-of-type(2) a:hover {
+      background-color: var(--hoofd-blauw);
+      box-shadow: inset 0 0 0 .075em var(--hoofd-blauw);
+  
+  }
+  
+  /* facebook */
+  nav:nth-of-type(2) section ul:nth-of-type(1) li:nth-of-type(1) a {
+  
+      background-image: url(../images/icons8-facebook-f.svg);
+      background-size: 1.5em;
+      background-position: center;
+  
+      background-repeat: no-repeat;
+  }
+  
+  nav:nth-of-type(2) section ul:nth-of-type(1) li:nth-of-type(1) a:hover {
+      background-image: url(../images/icons8-facebook-f1.svg);
+  }
+  
+  /* twitter */
+  nav:nth-of-type(2) section ul:nth-of-type(1) li:nth-of-type(2) a {
+      background-image: url(../images/icons8-twitter.svg);
+      background-size: 1.5em;
+      background-position: center;
+  
+      background-repeat: no-repeat;
+  }
+  
+  nav:nth-of-type(2) section ul:nth-of-type(1) li:nth-of-type(2) a:hover {
+      background-image: url(../images/icons8-twitter1.svg);
+  }
+  
+  /* instagram */
+  nav:nth-of-type(2) section ul:nth-of-type(1) li:nth-of-type(3) a {
+      background-image: url(../images/icons8-instagram.svg);
+      background-size: 1.5em;
+      background-position: center;
+  
+      background-repeat: no-repeat;
+  }
+  
+  nav:nth-of-type(2) section ul:nth-of-type(1) li:nth-of-type(3) a:hover {
+      background-image: url(../images/icons8-instagram2.svg);
+  }
+  
+  /* facebook */
+  nav:nth-of-type(2) section ul:nth-of-type(2) li:nth-of-type(1) a {
+      background-image: url(../images/icons8-facebook-fv.svg);
+      background-size: 1.5em;
+      background-position: center;
+  
+      background-repeat: no-repeat;
+  }
+  
+  nav:nth-of-type(2) section ul:nth-of-type(2) li:nth-of-type(1) a:hover {
+      background-image: url(../images/icons8-facebook-f1.svg);
+  }
+  
+  /* twitter */
+  nav:nth-of-type(2) section ul:nth-of-type(2) li:nth-of-type(2) a {
+      background-image: url(../images/icons8-twitterv.svg);
+      background-size: 1.5em;
+      background-position: center;
+  
+      background-repeat: no-repeat;
+  }
+  
+  nav:nth-of-type(2) section ul:nth-of-type(2) li:nth-of-type(2) a:hover {
+      background-image: url(../images/icons8-twitter1.svg);
+  }
+  
+  /* instagram */
+  nav:nth-of-type(2) section ul:nth-of-type(2) li:nth-of-type(3) a {
+      background-image: url(../images/icons8-instagramv.svg);
+      background-size: 1.5em;
+      background-position: center;
+  
+      background-repeat: no-repeat;
+  }
+  
+  nav:nth-of-type(2) section ul:nth-of-type(2) li:nth-of-type(3) a:hover {
+      background-image: url(../images/icons8-instagram2.svg);
+  }
+  
+  /* oranje */
+  nav:nth-of-type(2) section h4:nth-of-type(1) span:nth-of-type(1) {
+      text-decoration: underline var(--hoofd-oranje);
+  }
+  
+  /* blauw */
+  nav:nth-of-type(2) section h4:nth-of-type(2) span:nth-of-type(1) {
+      text-decoration: underline var(--hoofd-blauw);
+  }
+  
+
+  /* volleybal logo */
+  header nav:first-of-type a:first-of-type img:first-of-type {
+      width: 8em;
+  }
+  
+  header nav:first-of-type a:last-of-type img {
+      width: 2em;
+  }
+  
+  /* formulier */
+  header form {
+    position: relative;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-300%);
+    transition: .5s;
+
+  }
+
+  header form.openzoekbalk {
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(0);
+  }
+
+  header form input {
+    width: 100%;
+    padding: 1.8em;
+    padding-left: 2.5em;
+  }
+
+  header form button:nth-of-type(1) {
+    position: absolute;
+    left: 1em;
+    top: 1.8em;
+  }
+
+  header form button:nth-of-type(2) {
+    position: absolute;
+    right: .5em;
+    top: 2em;
+  }
+
+  /* alle p zwart*/
+  p {
+    color: var(--color-black);
+  }
+
+  /* alle h4 zwart */
+  h4 {
+    color: var(--color-black);
+  }
+
+  /* alle puntjes weghalen */
+  ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+  
+  /* zoek icoon nav */
+  #zoek-icon path {
+      fill: var(--color-black);
+  }
+  
+  /* account icoon nav */
+  #account-icon circle {
+      stroke: var(--color-black);
+      stroke-width:1.5;
+  }
+  
+  #account-icon path {
+      fill: var(--color-black);
+  }
+
+
+
+  /* https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html */
+  /* screenreader volleybal.nl site */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+ 
+/* eerste ul footer carroussel */
+footer > ul {
+	animation: slider 16s infinite linear alternate;
+	width:400vw;
+	display: flex;
+	gap: .3em;
+	padding-top: .7em;
+	padding-bottom: .7em;
+}
+
+/* de helft, zodat twee naast elkaar passen */
+footer > ul li {
+	width: 50vw;
+}
+
+/* padding */
+footer > ul li a {
+	padding: 1em;
+}
+
+/* precies twee passen */
+footer > ul li a img {
+	width: 80%;
+}
+
+/* animatie */
+@keyframes slider {
+	0% {
+		transform: translateX(0vw);
+	}
+
+	16% {
+		transform: translateX(0vw);
+	}
+
+	28% {
+		transform: translateX(-100vw);
+	}
+
+	44% {
+		transform: translateX(-100vw);
+	}
+
+	56% {
+		transform: translateX(-200vw);
+	}
+
+	72% {
+		transform: translateX(-200vw);
+	}
+	84% {
+		transform: translateX(-300vw);
+	}
+
+	100% {
+		transform: translateX(-300vw);
+	}
+}
+
+/* nederlandse postcodeloterij */
+footer > a img:nth-of-type(1) {
+	width: 100%;
+	padding-top: .7em;
+	padding-bottom: .7em;
+}
+
+/* volleybal logo */
+footer section:nth-of-type(1) img {
+	width: 70%;
+	margin: auto;
+}
+
+/* alle tekst footer in het midden */
+footer section {
+	text-align: center;
+	padding-top: .7em;
+	padding-bottom: .7em;
+}
+
+/* social media */
+footer section:nth-of-type(2) ul {
+	padding-top: .7em;
+	padding-bottom: .7em;
+
+	display:flex;
+	justify-content: center;
+	gap:.3em;
+}
+
+  /* social media naast elkaar in hamburgermenu */
+footer section:nth-of-type(2) ul a {
+	position: relative;
+	display:block;
+	width:2.75em;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	background-color: var(--color-white);
+	box-shadow: inset 0 0 0 .075em var(--socialmedia-grijs);
+	transition: .5s;
+}
+
+/* hover state */
+footer section:nth-of-type(2) ul:nth-of-type(1) a:hover {
+	background-color: var(--hoofd-oranje);
+	box-shadow: inset 0 0 0 .075em var(--hoofd-oranje);
+
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(2) a:hover {
+	background-color: var(--hoofd-blauw);
+	box-shadow: inset 0 0 0 .075em var(--hoofd-blauw);
+
+}
+
+/* facebook */
+footer section:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(1) a {
+
+	background-image: url(../images/icons8-facebook-f.svg);
+	background-size: 1.5em;
+	background-position: center;
+
+	background-repeat: no-repeat;
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(1) a:hover {
+	background-image: url(../images/icons8-facebook-f1.svg);
+}
+
+/* twitter */
+footer section:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(2) a {
+	background-image: url(../images/icons8-twitter.svg);
+	background-size: 1.5em;
+	background-position: center;
+
+	background-repeat: no-repeat;
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(2) a:hover {
+	background-image: url(../images/icons8-twitter1.svg);
+}
+
+/* instagram */
+footer section:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(3) a {
+	background-image: url(../images/icons8-instagram.svg);
+	background-size: 1.5em;
+	background-position: center;
+
+	background-repeat: no-repeat;
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(3) a:hover {
+	background-image: url(../images/icons8-instagram2.svg);
+}
+
+/* facebook */
+footer section:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(1) a {
+	background-image: url(../images/icons8-facebook-fv.svg);
+	background-size: 1.5em;
+	background-position: center;
+
+	background-repeat: no-repeat;
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(1) a:hover {
+	background-image: url(../images/icons8-facebook-f1.svg);
+}
+
+/* twitter */
+footer section:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(2) a {
+	background-image: url(../images/icons8-twitterv.svg);
+	background-size: 1.5em;
+	background-position: center;
+
+	background-repeat: no-repeat;
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(2) a:hover {
+	background-image: url(../images/icons8-twitter1.svg);
+}
+
+/* instagram */
+footer section:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(3) a {
+	background-image: url(../images/icons8-instagramv.svg);
+	background-size: 1.5em;
+	background-position: center;
+
+	background-repeat: no-repeat;
+}
+
+footer section:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(3) a:hover {
+	background-image: url(../images/icons8-instagram2.svg);
+}
+
+/* ul padding boven en onder */
+footer section:nth-of-type(3) ul {
+	padding-top: .7em;
+	padding-bottom: .7em;
+}
+
+/* ul padding boven en onder */
+footer section:nth-of-type(4) ul {
+	padding-top: .7em;
+	padding-bottom: .7em;
+}
+
+/* li items zelf padding boven en onder */
+footer section:nth-of-type(3) ul li {
+	padding-top: .2em;
+	padding-bottom: .2em;
+}
+
+/* li items zelf padding boven en onder */
+footer section:nth-of-type(4) ul li {
+	padding-top: .2em;
+	padding-bottom: .2em;
+}
+
+/* streepjes weg onderaan */
+footer section:nth-of-type(3) ul li a, footer section:nth-of-type(4) ul li a {
+	text-decoration: none;
+}
+
+/* hover state */
+footer section:nth-of-type(3) ul li a:hover, footer section:nth-of-type(4) ul li a:hover {
+	text-decoration: underline .1em var(--hoofd-oranje);
+}
+
+/* ul padding boven en onder */
+footer section:nth-of-type(5) ul {
+	padding-top: .7em;
+	padding-bottom: .7em;
+}
+
+/* hover state plaatje groter */
+footer section:nth-of-type(5) ul li a img:hover {
+    transform: scale(1.5);
+    transition: .5s;
+}
+
+/* p in het midden en niet alle breedte */
+footer section:nth-of-type(1) p {
+	text-align: center;
+	margin: auto;
+	width: 70%;
+}
+
+/* streepje onder volleybal */
+footer section:nth-of-type(2) h4:nth-of-type(1) span:nth-of-type(1) {
+	text-decoration: underline var(--hoofd-oranje);
+}
+
+/* streepje onder beachvolleybal */
+footer section:nth-of-type(2) h4:nth-of-type(2) span:nth-of-type(1) {
+	text-decoration: underline var(--hoofd-blauw);
+}
+
+/* streepje onder volleybal */
+footer section:nth-of-type(5) h4:nth-of-type(1) span:nth-of-type(1) {
+	text-decoration: underline var(--hoofd-oranje);
+}
+
+/* streepje onder beachvolleybal */
+footer section:nth-of-type(5) h4:nth-of-type(2) span:nth-of-type(1) {
+	text-decoration: underline var(--hoofd-blauw);
+}
+
+/* download naast elkaar en in midden */
+footer section:nth-of-type(5) ul {
+	display: flex;
+	justify-content: center;
+	gap: .4em;
+}
+
+/* download naast elkaar en in midden */
+footer section:nth-of-type(5) ul li a img {
+	flex-wrap: wrap;
+	width: 9em;
+}
+
+/* padding p */
+footer section:nth-of-type(5) p:nth-of-type(1) {
+	padding-top: .7em;
+	padding-bottom: .7em;
+}
+
+/* padding p */
+footer section:nth-of-type(5) p:nth-of-type(2) {
+	padding-top: .7em;
+	padding-bottom: .7em;
+}
+
+/* section oranje achtergrond */
+footer section:nth-of-type(6) {
+	background-color: var(--hoofd-oranje);
+}
+
+/* padding tussen li's */
+footer section:nth-of-type(6) li {
+	padding: .3em;
+}
+
+/* streepjes weg en a witte kleur geven */
+footer section:nth-of-type(6) li a {
+	color: var(--color-white);
+	text-decoration: none;
+}
+
+/* hover state */
+footer section:nth-of-type(6) li a:hover {
+	text-decoration: underline var(--color-black);
+}
+
+/* p onderaan top padding en witte kleur */
+footer section:nth-of-type(6) p {
+	padding-top: 1.3em;
+	color: var(--color-white);
+}
